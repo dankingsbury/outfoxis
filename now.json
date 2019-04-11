@@ -1,5 +1,10 @@
 {
   "version": 3,
   "name": "outfoxis-static",
-  "routes": [{ "src": "/", "dest": "/public/index.html" }]
+    "builds": [
+      { "src": "./public/**", "use": "@now/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "public/$1" }
+    ]
 }
