@@ -16,3 +16,4 @@ This is the source for the outfoxis.com HTML placeholder website.
 
 * add basic package.json with express, add basic server.js with / route
 * DNS: set up subdomain CNAME
+* Note: cannot set up custom domain on glitch until I help 2 users and get thanked
