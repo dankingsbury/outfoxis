@@ -11,3 +11,8 @@ This is the source for the outfoxis.com HTML placeholder website.
 
 * configure /public as static dir
 * DNS: set up subdomain CNAME
+
+## outfoxis.glitch.me
+
+* add basic package.json with express, add basic server.js with / route
+* DNS: set up subdomain CNAME
