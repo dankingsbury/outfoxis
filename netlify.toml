@@ -1,0 +1,9 @@
+[build]
+publish = "public"
+command = ""
+theme = ""
+
+[context.production.environment]
+HUGO_VERSION = "0.55"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"

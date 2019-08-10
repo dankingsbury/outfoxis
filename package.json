@@ -1,22 +1,33 @@
 {
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
   "name": "outfoxis",
-  "version": "1.0.0",
-  "description": "Outfoxis static site",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Outfoxis static site / hello world",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "faunadb": "^2.7.0"
+  },
+  "engines": {
+    "node": "9.x"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dankingsbury/outfoxis.git"
   },
-  "author": "Dan Kingsbury",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dankingsbury/outfoxis/issues"
   },
+  "author": "Dan Kingsbury",
   "homepage": "https://github.com/dankingsbury/outfoxis#readme",
-  "dependencies": {
-    "faunadb": "^2.7.0"
-  }
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
