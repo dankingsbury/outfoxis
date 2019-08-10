@@ -4,12 +4,13 @@
   "//3": "updating this file will download and update your packages",
   "name": "outfoxis",
   "version": "0.0.1",
-  "description": "hello world",
+  "description": "Outfoxis static site / hello world",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "faunadb": "^2.7.0"
   },
   "engines": {
     "node": "9.x"
