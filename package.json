@@ -6,7 +6,11 @@
   "version": "0.0.1",
   "description": "Outfoxis static site / hello world",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lambda-serve": "netlify-lambda serve functions-src",
+    "lambda-build": "netlify-lambda build functions-src",
+    "old_build": "webpack -mode production && npm run lambda-build",
+    "dev": "concurrently \"webpack-dev-server --content-base public/\" \"npm run lambda-serve\""
   },
   "dependencies": {
     "express": "^4.16.4",
@@ -29,5 +33,11 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "netlify-lambda": "^1.5.1",
+    "webpack-cli": "^3.3.6"
+  }
 }
