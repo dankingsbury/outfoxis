@@ -1,5 +1,5 @@
 /* code from functions/todos-read-all.js */                                                      
-import faunadb from 'faunadb'                                                                    
+let faunadb =require('faunadb');
                                                                                                  
 const q = faunadb.query                                                                          
 const client = new faunadb.Client({                                                              
