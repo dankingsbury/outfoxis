@@ -9,7 +9,7 @@
     "start": "node server.js",
     "lambda-serve": "netlify-lambda -c ./config/webpack.functions.js serve functions-src",
     "lambda-build": "netlify-lambda build functions-src",
-    "build": "netlify-lambda build functions-src",
+    "build": "netlify-lambda -c ./config/webpack.functions.production.js build functions-src",
     "old_build": "webpack -mode production && npm run lambda-build",
     "dev": "concurrently \"webpack-dev-server --content-base public/\" \"npm run lambda-serve\""
   },
