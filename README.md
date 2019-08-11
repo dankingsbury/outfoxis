@@ -11,6 +11,9 @@ This is the source for the outfoxis.com HTML placeholder website.
 
 * configure /public as static dir
 * DNS: set up subdomain CNAME
+* netlify.toml overrides site settings
+* functions in /functions, one per file
+* package.json controls node build
 
 ## outfoxis.glitch.me
 

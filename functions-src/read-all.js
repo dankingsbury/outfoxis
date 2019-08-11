@@ -24,7 +24,7 @@ exports.handler = (event, context, callback) => {
     return client.query(getAllTodoDataQuery).then((ret) => {
       return callback(null, {
         statusCode: 200,
-        body: JSON.stringify(ret)
+        body: JSON.stringify(ret,null,2)
       })
     })
   }).catch((error) => {
