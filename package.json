@@ -7,7 +7,7 @@
   "description": "Outfoxis static site / hello world",
   "scripts": {
     "start": "node server.js",
-    "lambda-serve": "netlify-lambda serve functions-src",
+    "lambda-serve": "netlify-lambda -c ./config/webpack.functions.js serve functions-src",
     "lambda-build": "netlify-lambda build functions-src",
     "build": "netlify-lambda build functions-src",
     "old_build": "webpack -mode production && npm run lambda-build",
@@ -39,6 +39,7 @@
     "concurrently": "^4.1.1",
     "dotenv": "^8.0.0",
     "netlify-lambda": "^1.5.1",
+    "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
   }
 }
